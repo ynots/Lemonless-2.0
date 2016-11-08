@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Lemonless</title>
+    <meta charset="utf-8" />
+    <meta html-equiv="author" content="Tony Shum" />
+
+    <!--[if lt IE 9]>	<script src="js/html5shiv.js">	</script><![endif]-->
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html"><img src="images/lemonless-logo.jpg" alt="Lemonless Logo" /></a>
+    </header><!-- Header Ends -->
+
+    <!-- Main nav bar -->
+    <nav id="main-nav">
+        <ul id="nav-bar">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Reviews</a>
+                <ul>
+                    <li><a href="#">Newest</a></li>
+                    <li>
+                        <a href="#">Categories</a>
+                        <ul>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Motion Pictures</a></li>
+                            <li><a href="#">Tech & Gadgets</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Best and Worst</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Reviewers</a></li>
+            <li><a href="#">Blogs</a></li>
+        </ul>
+    </nav><!-- Main Nav Bar Ends -->
+
+    <!-- Search bar -->
+    <form action="#" id="searchbar" method="get">
+        <label>
+            Search:
+            <input type="search" name="searchkeywords" placeholder="Search" />
+            <input type="submit" name="search" value="Go" />
+        </label>
+    </form><!-- Search Bar Ends -->
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+        <h1 id="company-title">Lemonless</h1>
+        <p id="slogan">Don't Guess, Go Lemonless</p>
+
+        <!-- Feature Video Section -->
+        <section id="feature-video">
+            <h2 class="feature-section-title">Feature</h2>
+            <article id="feature-video-article">
+
+                <!-- Video Embed -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wIl2-5f8NTo" frameborder="0" allowfullscreen></iframe>
+
+                <!-- Feature Video Details -->
+                <h3 itemprop="itemReviewed" class="article-title">Summer Lesson - Virtual Reality</h3>
+                <p class="author-name">By: <span itemprop="author">Matsui Yamasaki</span></p>
+                <h4>Score</h4>
+                <p itemprop="reviewRating" class="rating">9.5</p>
+                <h4>Article Contents</h4>
+                <ol class="contents-overview">
+                    <li>Overview</li>
+                    <li>Look &Aacute; Feel</li>
+                    <li>Specifications</li>
+                    <li>Price</li>
+                    <li>Summary</li>
+                </ol>
+                <section itemprop="reviewBody" class="review-body">
+                    <p>
+                        Once it was a dream. Now reality. Or is it?
+                    </p>
+                    <p>
+                        The world of gaming has taking a sharp turn as it changes it's focus onto virtual reality (VR). This VR craze has led to
+                        many different studios in the industry to join the trend. While this technology is still in its infancy, gaming studies
+                        have not stopped to show off what they can do in their products.
+                    </p>
+                    <p>
+                        Summer Lessons is one that is particularly well crafted. Expected to launch in the coming weeks, this Japanese studio
+                        impressed everyone at E3 this year. While we only get a glimpse of the gameplay, this highly anticipated title did not
+                        disappoint.
+                    </p>
+                    <table class="review-specs">
+                        <tr>
+                            <th>Release Date</th>
+                            <th>Platform</th>
+                            <th>Genre</th>
+                            <th>Developer</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Nov 04, 2016</td>
+                            <td>PC, PS4, XBox One</td>
+                            <td>VR Storytelling</td>
+                            <td><a href="https://www.konami.com/en/">Konami</a></td>
+                            <td>$149.99</td>
+                        </tr>
+                    </table>
+                </section>
+                <p class="to-top"><a href="#main-nav">Back To Top</a></p>
+            </article>
+
+            <!-- Quick Comment Section -->
+            <section class="quick-comment">
+                <form action="#" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter Username" size="20" />
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" size="20" />
+                    <label for="score">Score</label>
+                    <input type="range" name="score" min="1" max="10" />
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" placeholder="Type comment here" rows="5" cols="40"></textarea>
+
+                </form>
+            </section>
+        </section><!-- Feature Video Section Ends -->
+
+        <!-- Feature Articles Section -->
+        <section id="featured-articles">
+            <h2 class="feature-section-title">Featured Articles</h2>
+            <article itemscope itemprop="https://schema.org/Review" class="feature-article">
+                <figure>
+                    <img src="images/turntable.jpg" alt="Panasung Turntable" />
+                    <figcaption>
+                        <h3 itemprop="itemReviewed" class="article-title"><a href="#">Panasung Turntable</a></h3>
+                    </figcaption>
+                </figure>
+                <p class="author-name">By: <span itemprop="author">Theodore El Salvatore</span></p>
+                <p>Score: <span itemprop="reviewRating" class="rating">6.8</span></p>
+                <dl itemprop="reviewBrief" class="score-overview">
+                    <dt>Aesthetics:</dt>
+                    <dd>9.5</dd>
+                    <dt>Functionality:</dt>
+                    <dd>8.0</dd>
+                    <dt>Price</dt>
+                    <dd>2.5</dd>
+                </dl>
+                <p class="read-more"><a href="http://www.cnet.com">More</a></p>
+            </article>
+            <article itemscope itemprop="https://schema.org/Review" class="feature-article">
+                <figure>
+                    <img src="images/ipad-stand.jpg" alt="iPad Bathroom Stand" />
+                    <figcaption>
+                        <h3 itemprop="itemReviewed" class="article-title"><a href="#">iPad Bathroom Stand</a></h3>
+                    </figcaption>
+                </figure>
+                <p class="author-name">By: <span itemprop="author">Ben Smith</span></p>
+                <p>Score: <span itemprop="reviewRating" class="rating">9.3</span></p>
+                <dl itemprop="reviewBrief" class="score-overview">
+                    <dt>Aesthetics:</dt>
+                    <dd>10.0</dd>
+                    <dt>Functionality:</dt>
+                    <dd>10.0</dd>
+                    <dt>Price</dt>
+                    <dd>8.0</dd>
+                </dl>
+                <p class="read-more"><a href="#">More</a></p>
+            </article>
+            <article itemscope itemprop="https://schema.org/Review" class="feature-article">
+                <video width="240" height="168">
+                    <source src="images/CameraLens.ogv" type="video/ogg" />
+                    <!-- alternative video formats -->
+                </video>
+                <h3 itemprop="itemReviewed" class="article-title"><a href="#">Ninon TD7</a></h3>
+                <p class="author-name">By: <span itemprop="author">Alisha MacDonald</span></p>
+                <p>Score: <span itemprop="reviewRating" class="rating">6.0</span></p>
+                <dl itemprop="reviewBrief" class="score-overview">
+                    <dt>Aesthetics:</dt>
+                    <dd>7.0</dd>
+                    <dt>Functionality:</dt>
+                    <dd>8.0</dd>
+                    <dt>Price</dt>
+                    <dd>3.0</dd>
+                </dl>
+                <p class="read-more"><a href="#">More</a></p>
+            </article>
+        </section><!-- Feature Articles Section Ends -->
+    </main><!-- Main Content Ends -->
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <h2>Most Viewed Reviews</h2>
+        <ul>
+            <li><a href="Bruce.html">Lenovo Yoga Book By Bruce Young</a></li>
+            <li><a href="review1.html">Razer's Blade Stealth by Jong Chun Ra</a></li>
+        </ul>
+    </aside><!-- Sidebar Ends -->
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+        <ul id="footer-nav-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Apply to be a Reviewer</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <p>Follow Us</p>
+        <ul id="social-media">
+            <li><a href="http://www.youtube.com"><img src="images/youtube.png" /></a></li>
+            <li><a href="http://www.twitter.com"><img src="images/twitter.png" /></a></li>
+            <li><a href="http://www.facebook.com"><img src="images/facebook.png" /></a></li>
+            <li><a href="http://www.google.com"><img src="images/google-plus.png" /></a></li>
+            <li><a href="http://www.instagram.com"><img src="images/instagram.png" /></a></li>
+            <li><a href="http://www.pinterest.com"><img src="images/pinterest.png" /></a></li>
+        </ul>
+        <form action="#" method="post">
+            <label>
+                Subscribe to our Newsletter
+                <input type="email" name="email" placeholder="yourname@email.com" />
+                <input type="submit" name="subscribe" placeholder="Subscribe" />
+            </label>
+        </form>
+        <p>&copy; Lemonless 2016</p>
+    </footer><!-- Footer Ends -->
+
+</body>
+</html>
