@@ -4,61 +4,37 @@
     <title>Live Lemonless</title>
     <meta charset="utf-8" />
     <meta html-equiv="author" content="Tony Shum" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/TallisStyles.css">
 
     <!--[if lt IE 9]>	<script src="js/html5shiv.js">	</script><![endif]-->
 
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <a href="index.html"><img src="images/lemonless-logo.jpg" alt="Lemonless Logo" /></a>
-    </header><!-- Header Ends -->
+<!-- Header -->
+<header>
+    <a href="index.html"><img src="images/lemonless-logo.jpg" alt="Lemonless Logo" /></a>
+</header><!-- Header Ends -->
 
-    <!-- Main nav bar -->
-    <nav id="main-nav">
-        <ul id="nav-bar">
-            <li><a href="index.html">Home</a></li>
-            <li>
-                <a href="#">Reviews</a>
-                <ul>
-                    <li><a href="#">Newest</a></li>
-                    <li>
-                        <a href="#">Categories</a>
-                        <ul>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Software</a></li>
-                            <li><a href="#">Mobile Apps</a></li>
-                            <li><a href="#">Motion Pictures</a></li>
-                            <li><a href="#">Tech & Gadgets</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#">Best and Worst</a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">Reviewers</a></li>
-            <li><a href="#">Blogs</a></li>
-        </ul>
-    </nav><!-- Main Nav Bar Ends -->
-
-    <!-- Search bar -->
-    <form action="#" id="searchbar" method="get">
-        <label>
-            Search:
-            <input type="search" name="searchkeywords" placeholder="Search" />
-            <input type="submit" name="search" value="Go" />
-        </label>
-    </form><!-- Search Bar Ends -->
-
-    <hr />
+<!-- Main nav bar -->
+<nav class="main-nav">
+    <ul class="nav-bar" id="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Bruce.html">Lenovo Yoga Book By Bruce Young</a></li>
+        <li><a href="review1.html">Razer's Blade Stealth by Jong Chun Ra</a></li>
+        <li><a href="#">External Reviews</a>
+            <ul>
+                <li><a href="https://www.cnet.com/">CNET.com</a></li>
+                <li><a href="http://www.trustedreviews.com/">Trusted Reviews</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav><!-- Main Nav Bar Ends -->
 
     <!-- Main Content -->
     <main>
-        <h1 id="company-title">Lemonless</h1>
-        <p id="slogan">Don't Guess, Go Lemonless</p>
-
         <!-- Feature Video Section -->
-        <section id="feature-video">
+        <section class="homepage-feature">
             <h2 class="feature-section-title">Feature</h2>
             <article id="feature-video-article">
 
@@ -66,18 +42,14 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/wIl2-5f8NTo" frameborder="0" allowfullscreen></iframe>
 
                 <!-- Feature Video Details -->
-                <h3 itemprop="itemReviewed" class="article-title">Summer Lesson - Virtual Reality</h3>
-                <p class="author-name">By: <span itemprop="author">Matsui Yamasaki</span></p>
+                <div id="featureVideoDetails">
+                    <h3 itemprop="itemReviewed" class="article-title">Summer Lesson - Virtual Reality</h3>
+                    <p class="author-name">By: <span itemprop="author">Matsui Yamasaki</span></p>
+                </div>
+
                 <h4>Score</h4>
                 <p itemprop="reviewRating" class="rating">9.5</p>
-                <h4>Article Contents</h4>
-                <ol class="contents-overview">
-                    <li>Overview</li>
-                    <li>Look &Aacute; Feel</li>
-                    <li>Specifications</li>
-                    <li>Price</li>
-                    <li>Summary</li>
-                </ol>
+
                 <section itemprop="reviewBody" class="review-body">
                     <p>
                         Once it was a dream. Now reality. Or is it?
@@ -109,29 +81,13 @@
                         </tr>
                     </table>
                 </section>
-                <p class="to-top"><a href="#main-nav">Back To Top</a></p>
             </article>
-
-            <!-- Quick Comment Section -->
-            <section class="quick-comment">
-                <form action="#" method="post">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Enter Username" size="20" />
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter Password" size="20" />
-                    <label for="score">Score</label>
-                    <input type="range" name="score" min="1" max="10" />
-                    <label for="comment">Comment</label>
-                    <textarea name="comment" placeholder="Type comment here" rows="5" cols="40"></textarea>
-
-                </form>
-            </section>
         </section><!-- Feature Video Section Ends -->
 
         <!-- Feature Articles Section -->
         <section id="featured-articles">
             <h2 class="feature-section-title">Featured Articles</h2>
-            <article itemscope itemprop="https://schema.org/Review" class="feature-article">
+            <article itemscope itemprop="https://schema.org/Review" class="feature-article" id="featured-articles-turntable">
                 <figure>
                     <img src="images/turntable.jpg" alt="Panasung Turntable" />
                     <figcaption>
@@ -150,7 +106,7 @@
                 </dl>
                 <p class="read-more"><a href="http://www.cnet.com">More</a></p>
             </article>
-            <article itemscope itemprop="https://schema.org/Review" class="feature-article">
+            <article itemscope itemprop="https://schema.org/Review" class="feature-article" id="featured-articles-IpadStand">
                 <figure>
                     <img src="images/ipad-stand.jpg" alt="iPad Bathroom Stand" />
                     <figcaption>
@@ -169,7 +125,7 @@
                 </dl>
                 <p class="read-more"><a href="#">More</a></p>
             </article>
-            <article itemscope itemprop="https://schema.org/Review" class="feature-article">
+            <article itemscope itemprop="https://schema.org/Review" class="feature-article" id="featured-articles-Camera">
                 <video width="240" height="168">
                     <source src="images/CameraLens.ogv" type="video/ogg" />
                     <!-- alternative video formats -->
@@ -189,17 +145,6 @@
             </article>
         </section><!-- Feature Articles Section Ends -->
     </main><!-- Main Content Ends -->
-
-    <!-- Sidebar -->
-    <aside id="sidebar">
-        <h2>Most Viewed Reviews</h2>
-        <ul>
-            <li><a href="Bruce.html">Lenovo Yoga Book By Bruce Young</a></li>
-            <li><a href="review1.html">Razer's Blade Stealth by Jong Chun Ra</a></li>
-        </ul>
-    </aside><!-- Sidebar Ends -->
-
-    <hr />
 
     <!-- Footer -->
     <footer>

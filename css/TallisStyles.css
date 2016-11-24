@@ -1,0 +1,104 @@
+/*-----------------------------------------------------------------*/
+/*@Media for phone display*/
+/*-----------------------------------------------------------------*/
+
+
+/*<ul class="topnav" id="myTopnav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>*/
+
+
+@media screen and (max-width: 400px) {
+    .main-nav {
+        position: fixed;
+        width: 100%;
+    }
+
+    ul.nav-bar li:not(:first-child) {display: none}
+
+    ul.nav-bar li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    ul.nav-bar li {
+        float: none;
+        display: inline;
+    }
+
+    ul.nav-bar li a {
+        display: block;
+        text-align: left;
+    }
+
+    #searchbar { display: none; }
+    #sidebar { display: none; }
+}
+
+/*-------------------------------*/
+
+.main-nav {
+    clear: both;
+    position: relative;
+}
+
+ul.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #142033;
+}
+
+/*ul.nav-bar li { float: right; }*/
+ul.nav-bar li {
+    display: inline-block;
+
+}
+
+ul.nav-bar li a {
+    display: inline-block;
+    color: #fefefe;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.nav-bar li a:hover {
+    background-color: #415370;
+}
+
+#company-title {
+    display: block;
+    margin: 0;
+    color: #fefefe;
+    padding: 15px;
+}
+
+#slogan {
+    display: block;
+    margin: 0;
+    color: #fefefe;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.titleWrapper {
+    display: flex;
+    background-color: #333;
+
+}
+
+#feature-video {background-color: blue;}
+.review-body {background-color: red;}
+.quick-comment {background-color: green;}
+#featured-articles {background-color: orange;}
